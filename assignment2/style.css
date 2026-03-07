@@ -113,6 +113,29 @@ nav a:hover::after {
     width:fit-content;
 }
 
+#style-links a { 
+    outline:none;
+    text-decoration:none;
+    padding: 2px 1px 0;
+}
+#style-links a:link {
+    color:#021737;
+}
+#style-links a:visited{ 
+    color:#6210f1;
+}
+#style-links a:focus {
+    border-bottom: 1px solid;
+    background:#1662d4;
+}
+#style-links a:hover {
+    border-bottom: 1px solid;
+}
+
+
+
+
+
 
 
 .footer {
