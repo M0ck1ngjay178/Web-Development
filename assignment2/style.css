@@ -1,5 +1,5 @@
 
-body{
+body {
     background-color: lightsteelblue;
 }
 
@@ -15,7 +15,6 @@ h2 {
     font-size: 28px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-
 }
 
 p {
@@ -137,7 +136,6 @@ nav a:hover::after {
 #style-links a:focus {
     background:#1662d4;
 }
-
 
 .footer {
     background-color: #101250;
