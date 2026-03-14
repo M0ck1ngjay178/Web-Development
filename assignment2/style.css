@@ -1,14 +1,13 @@
-
+/* default page color */
 body {
     background-color: lightsteelblue;
 }
-
+/* header styles */
 h1 {
     font-family: "Arial", sans-serif;
     color: darkblue;
     font-size: 36px;
     text-align: center;
-
 }
 h2 {
     color: rgb(69, 46, 35);
@@ -16,7 +15,7 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
-
+/* paragraph styles */
 p {
     font-family:'Times New Roman', Times, serif;
     color: black;
@@ -29,6 +28,7 @@ p {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
 }
+/* img style, border, size, shadow */
 .restaurant-img {
     display: block;
     margin: 20px auto;
@@ -38,6 +38,7 @@ p {
     height: 200px;
     box-shadow: #5e5e5e 5px 5px 15px;
 }
+/* --------TOP NAVIGATION --------------*/
 nav {
     position: fixed;
     top: 0;
@@ -82,6 +83,28 @@ nav a::after {
 nav a:hover::after {
     width: 100%;
 }
+/*------------END NAVIGATION-------------*/
+
+/*----------TABLE STYLES----------------*/
+/*  PADDING VS MARGIN COMMENT **********************
+    - padding allows the web designer to manipulate the space inside an element.
+    this is the space between the content and the border
+    for example: internal spacing of a box
+
+    diagram:
+    (border)
+        (padding)
+            (content)
+
+    - margin allows the programmer to manipulate the space outside of an element, and outside the border
+    this is external spacing and doesnt interact with the background of the element
+   
+    diagram:
+    space (margin)
+        [border + padding + content]
+    space (margin)
+
+****************************************/
 
 .menu-table{
     width: 100%;
@@ -113,7 +136,9 @@ nav a:hover::after {
     font-weight: bold;
     width:fit-content;
 }
+/*----------END TABLE STYLES----------------*/
 
+/*----------LINK STYLES---------------------*/
 #style-links a {
     outline: none;
     text-decoration: none;
@@ -125,7 +150,7 @@ nav a:hover::after {
 }
 
 #style-links a:visited {
-    color:#6210f1;
+    color:#52269f;
 }
 
 #style-links a:hover {
@@ -134,8 +159,9 @@ nav a:hover::after {
 }
 
 #style-links a:focus {
-    background:#1662d4;
+    background:#16d42f;
 }
+/*----------END TABLE STYLES----------------*/
 
 .footer {
     background-color: #101250;
@@ -146,10 +172,19 @@ nav a:hover::after {
 }
 
 fieldset{
-    padding: 10px auto;
+    width: fit-content;
 }
 
 input, textarea {
      display: flex;
     flex-direction: column;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border: 2px dashed red;
+}
+
+
+input:valid {
+  border: 2px solid black;
 }
