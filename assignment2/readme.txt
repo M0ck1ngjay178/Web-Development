@@ -15,4 +15,8 @@ Files:
 Run command:
 windows powershell: start index.html
 
+**Note: Must Unzip folder for proper format!
+
+Thank You!
+
 #-------------------------------------------#
