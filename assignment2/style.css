@@ -1,6 +1,7 @@
-/* default page color */
+/* default page color and font*/
 body {
     background-color: lightsteelblue;
+    font-family: 'Courier New', Courier, monospace;
 }
 /* header styles */
 h1 {
