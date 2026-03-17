@@ -15,6 +15,9 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
+h3{
+    color:rgb(166, 78, 47);
+}
 /* paragraph styles */
 p {
     font-family:'Times New Roman', Times, serif;
@@ -118,6 +121,11 @@ nav a:hover::after {
 .menu-table th {
     background-color: #101250;
     color: white;
+}
+td img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
 }
 
 #Drinks ul {
