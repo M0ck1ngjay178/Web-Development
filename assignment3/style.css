@@ -1,6 +1,6 @@
 /* default page color and font*/
 body {
-    background-color: lightsteelblue;
+    background-color: rgba(203, 228, 222, 0.976);
     font-family: 'Courier New', Courier, monospace;
 }
 /* header styles */
@@ -32,61 +32,7 @@ p {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
 }
-/* img style, border, size, shadow */
-.restaurant-img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    border: 2px solid #101250;
-    width: 200px;
-    height: 200px;
-    box-shadow: #5e5e5e 5px 5px 15px;
-}
-/* --------TOP NAVIGATION --------------*/
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(41, 47, 87, 0.9);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    padding: 0.4rem 0;
-    border-bottom: 1px solid #101250;
-}
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    position: relative;
-}
-
-nav a:hover {
-    color: #888;
-}
-
-nav a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: width 0.3s ease;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
 /*------------END NAVIGATION-------------*/
 
 /*----------TABLE STYLES----------------*/
@@ -110,41 +56,6 @@ nav a:hover::after {
 
 ****************************************/
 
-.menu-table{
-    width: 100%;
-    margin: 20px 0;
-}
-
-.menu-table th, .menu-table td {
-    border: 1px solid black;
-    padding: 10px;
-}
-.menu-table th {
-    background-color: #101250;
-    color: white;
-}
-td img{
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-}
-
-#Drinks ul {
-    list-style: none;
-    padding-left: 0;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2,180px);
-}
-
-#Drinks ul > li {
-    background: #5e5e5e4c;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
-    font-weight: bold;
-    width:fit-content;
-}
 /*----------END TABLE STYLES----------------*/
 
 /*----------LINK STYLES---------------------*/
@@ -173,27 +84,9 @@ td img{
 /*----------END TABLE STYLES----------------*/
 
 .footer {
-    background-color: #101250;
+    background-color: #0b3b27;
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
-}
-
-fieldset{
-    width: fit-content;
-}
-
-input, textarea {
-     display: flex;
-    flex-direction: column;
-}
-
-input:invalid:not(:placeholder-shown) {
-  border: 2px dashed red;
-}
-
-
-input:valid {
-  border: 2px solid black;
 }
