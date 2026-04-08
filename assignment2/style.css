@@ -185,7 +185,7 @@ fieldset{
 }
 
 input, textarea {
-     display: flex;
+    display: flex;
     flex-direction: column;
 }
 
