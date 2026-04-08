@@ -22,76 +22,42 @@
         </ul>
     </nav>
 
-    <!-- Home Section -->
     <section id="home">
-        <div class="hero-content">
-            <h1>Margo Bonal</h1>
-            <p class="hero-subtitle">Computer Science Senior & Full Stack Developer</p>
-            <p>Passionate about creating innovative solutions and building amazing digital experiences.</p>
-            <div>
-                <a href="projects.html" class="cta-button">View My Work</a>
-                <a href="contact.html" class="cta-button">Get In Touch</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src="static/img/memoji.jpg" alt="Profile Picture" class="profile-img">
-            <div class="about-text">
-                <p>I'm a Computer Science Senior at Pennsylvania Western University, California PA</p> 
-                <p>(GPA: 3.72) Magna Cum Laude</p>
-                <p>I enjoy solving real-world problems through clean back-end logic, developing full-stack applications, and exploring fields like cybersecurity and networking. I believe great code starts with clear thinking and ends with intuitive user experiences.</p>
-                <p> When I'm not coding, I'm learning new tech and contributing to open source projects.</p>
-                <p>I'm currently seeking opportunities to work on meaningful projects with forward-thinking teams!</p>
+        <!-- decorative blobs -->
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+
+        <!-- main card -->
+        <div class="hero-card">
+
+            <div class="hero-image">
+            <img src="static/img/memoji.jpg" alt="Margo">
             </div>
+
+            <h1 class="hero-name">Margo Bonal</h1>
+
+            <p class="hero-subtitle typing"></p>
+
+            <p class="hero-desc">
+            Passionate about building clean, scalable applications and solving real-world problems through code.
+            </p>
+
+            <div class="hero-buttons">
+            <a href="projects.html" class="cta-button primary">View Work</a>
+            <a href="contact.html" class="cta-button secondary">Contact Me</a>
+            </div>
+
         </div>
     </section>
     
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Margo B. All rights reserved.</p>
+        <p>&copy; 2025 Margo Bonal All rights reserved.</p>
     </footer>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Add active class to navigation based on scroll position
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 60) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('nav a').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Contact form handling (you'll need to implement the Flask route)
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            // Form will be handled by Flask
-            console.log('Form submitted');
-        });
-    </script>
+    <script src="static/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
 </body>
 </html>
