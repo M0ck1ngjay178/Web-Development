@@ -70,7 +70,9 @@
     font-weight: 800;
     background: linear-gradient(45deg, #fff, #aaa);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; /* for Chrome/Safari */
+    background-clip: text; /* standard */
+    color: transparent; /* fallback for Firefox */
 }
 
 .hero-subtitle {
