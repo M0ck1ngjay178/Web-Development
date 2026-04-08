@@ -1,11 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Button click alerts
-    document.querySelectorAll('button').forEach(button => {
-        button.addEventListener('click', () => {
-            alert('Button clicked!');
-        });
-    });
-
     // Run typing animation
     typeTheme();
 
