@@ -34,71 +34,94 @@
     </nav>
 
     <!-- Projects Section -->
-     <!--TODO: add bootstrap-->
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="static/img/dash.png" alt="Project Image">
-                </div>
-                <div class="project-content">
-                    <h3>CareSync - CardioLink</h3>
-                    <p>A specialized branch of the CareSync application, designed to manage cardiac implantable and wearable devices, as well as associated patients and device data.</p>
-                    <div class="project-links"></div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="static/img/atm.png" alt="Project Image">
-                </div>
-                <div class="project-content">
-                    <h3>Bank Management Simulator</h3>
-                    <p>A Java Swing Bank Management simulator application with sign-up and ATM processing. MySQL connectivity.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/M0ck1ngjay178/Bank_Management_Simulation">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="static/img/filedrop.png" alt="Project Image">
-                </div>
-                <div class="project-content">
-                    <h3>File Drop Box</h3>
-                    <p> HIPAA Encrypted File DropBox Application for Patient Records.</p>
-                    <div class="project-links">
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="static/img/vulcan.png" alt="Project Image">
-                </div>
-                <div class="project-content">
-                    <h3>Vulcan Activity Tracker</h3>
-                    <p>Senior Project Fitness App.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/M0ck1ngjay178/Senior-Project-2">GitHub</a>
-                        <a href="https://vulcanactivitytracker.onrender.com">Vulcan Activity Tracker</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="static/img/sbc.png" alt="Project Image">
-                </div>
-                <div class="project-content">
-                    <h3>Intel 8080 Single Board Computer</h3>
-                    <p>Designed and built a functional single-board computer (SBC) using the Intel 8085 microprocessor, memory, peripherals, and I/O systems.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/M0ck1ngjay178/Intel_8085_Single_Board_Computer">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--TODO: add bootstrap-->
+    <div class="container">
+        <section id="projects">
+            <h2 class="mb-4">Featured Projects</h2>
 
+            <div class="row g-4">
+
+                <!-- Project 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="project-card d-flex flex-column">
+                        <div class="project-img">
+                            <img src="static/img/dash.png" class="img-fluid" alt="Project Image">
+                        </div>
+                        <div class="project-content d-flex flex-column">
+                            <h3>CareSync - CardioLink</h3>
+                            <p>A specialized branch of the CareSync application, designed to manage cardiac implantable and wearable devices, as well as associated patients and device data.</p>
+                            <div class="project-links mt-auto"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="project-card d-flex flex-column">
+                        <div class="project-img">
+                            <img src="static/img/atm.png" class="img-fluid" alt="Project Image">
+                        </div>
+                        <div class="project-content d-flex flex-column">
+                            <h3>Bank Management Simulator</h3>
+                            <p>A Java Swing Bank Management simulator with sign-up, ATM processing, and MySQL connectivity.</p>
+                            <div class="project-links mt-auto">
+                                <a href="https://github.com/M0ck1ngjay178/Bank_Management_Simulation">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="project-card d-flex flex-column">
+                        <div class="project-img">
+                            <img src="static/img/filedrop.png" class="img-fluid" alt="Project Image">
+                        </div>
+                        <div class="project-content d-flex flex-column">
+                            <h3>File Drop Box</h3>
+                            <p>HIPAA-encrypted file dropbox application for securely handling patient records.</p>
+                            <div class="project-links mt-auto"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="project-card d-flex flex-column">
+                        <div class="project-img">
+                            <img src="static/img/vulcan.png" class="img-fluid" alt="Project Image">
+                        </div>
+                        <div class="project-content d-flex flex-column">
+                            <h3>Vulcan Activity Tracker</h3>
+                            <p>Senior project fitness tracking application with activity monitoring and analytics.</p>
+                            <div class="project-links mt-auto">
+                                <a href="https://github.com/M0ck1ngjay178/Senior-Project-2">GitHub</a>
+                                <a href="https://vulcanactivitytracker.onrender.com">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="project-card d-flex flex-column">
+                        <div class="project-img">
+                            <img src="static/img/sbc.png" class="img-fluid" alt="Project Image">
+                        </div>
+                        <div class="project-content d-flex flex-column">
+                            <h3>Intel 8080 Single Board Computer</h3>
+                            <p>Designed and built a functional SBC using the Intel 8085 microprocessor, memory, and I/O systems.</p>
+                            <div class="project-links mt-auto">
+                                <a href="https://github.com/M0ck1ngjay178/Intel_8085_Single_Board_Computer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+        
      <!-- idea Section -->
     <section id="contact" class="container py-5 mt-5">
         <h2 class="mb-3">Collaboration Opportunities</h2>
