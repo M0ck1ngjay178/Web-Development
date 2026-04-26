@@ -2,28 +2,75 @@
 #skills {
     background: #000;
     padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
 }
 
-#skills h2 {
-    color: #fff;
+/* background glow*/
+#skills::before,
+#skills::after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    filter: blur(110px);
+    opacity:.35;
+    z-index:0;
 }
 
-#skills .card {
-    background: #111;
-    color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    border: 1px solid #333;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+#skills::before{
+    background:#7c4dff;
+    top:10%;
+    left:5%;
 }
 
-#skills .card:hover {
-    transform: translateY(-5px);
-    border-color: #555;
+#skills::after{
+    background:#00c6ff;
+    bottom:5%;
+    right:5%;
 }
 
-#skills .card-title {
-    margin-bottom: 1rem;
-    color: #fff;
+/* Skill Cards */
+#skills .card{
+    position: relative;
+    z-index:1;
+
+    /* glassy*/
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(18px);
+
+    color:#fff;
+    padding:2rem;
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    box-shadow: 0 0 20px rgba(124,77,255,.25), 0 0 40px rgba(0,198,255,.18),inset 0 0 15px rgba(255,255,255,.03);
+
+    transition: all .35s ease;
 }
 
+/* gradient border */
+#skills .card::before{
+    content:"";
+    position:absolute;
+    inset:-2px;
+    border-radius:24px;
+    padding:2px;
+
+    background: linear-gradient(135deg, #7c4dff,#00c6ff, #7c4dff);/*reuse from home page*/
+
+    -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    opacity:.6;
+    z-index:-1;
+}
+
+/* Hover glow boost */
+#skills .card:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 30px rgba(124,77,255,.45), 0 0 60px rgba(0,198,255,.35),0 20px 50px rgba(0,0,0,.5);
+}
